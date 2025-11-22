@@ -26,7 +26,7 @@ const noteSchema = new Schema(
 );
 
 noteSchema.index(
-  { name: 'text' },
+  { title: 'text', content: 'text' },
   {
     name: 'NoteTextIndex',
     weights: { title: 10, content: 2 },
